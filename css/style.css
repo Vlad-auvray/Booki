@@ -1,0 +1,28 @@
+body {
+  font-family: 'Raleway', sans-serif;
+    width: 90%;
+
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.logo{
+  align-self: flex-start;
+}
+
+.menu {
+  align-self: flex-end;
+}
+
+.menu:hover{
+  border-top: solid, 1px, blue;
+}
