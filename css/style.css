@@ -1,12 +1,10 @@
 body {
   font-family: 'Raleway', sans-serif;
-    width: 90%;
-
+    margin: 2%;
 }
 
 * {
   box-sizing: border-box;
-
 }
 
 .header {
@@ -17,12 +15,162 @@ body {
 }
 .logo{
   align-self: flex-start;
+  
 }
 
-.menu {
+.logo img{
+  width: 50%;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
   align-self: flex-end;
+  align-content: space-between;
+  
 }
 
-.menu:hover{
-  border-top: solid, 1px, blue;
+.menu li {
+list-style: none;
+    padding: 10px ;
+   ;
+  }
+
+.menu a {
+  padding: 20px 2px 2px 2px;
+  margin-right: 25px;
+  text-decoration: none;
+  
+}
+
+.menu a:hover{
+
+ border-top: solid 2px #0065FC;
+ color: #0065FC;
+}
+
+
+.recherche-ville{
+  width: 400px;
+  border-radius: 10px;
+}
+
+.recherche-ville i {
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  padding-top: 15px;
+  color: black;
+  font-weight: bold;
+  background-color:#F2F2F2 ;
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+}
+
+.recherche-ville input {
+  height: 50px;
+  width: 230px;
+  padding: 15px;
+  font-weight: bold;
+  color: black;
+   border:#F2F2F2 solid 0.5px;
+}
+
+.recherche-ville button {
+  background-color:#0065FC ;
+  height: 50px;
+  width: 100px;
+  border: none;
+  color: white;
+  border-radius: 0 10px 10px 0;
+}
+
+.filtres {
+  margin-top: 50px;
+  margin-bottom: 40px ;
+}
+
+.filtres h3{
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.filtres ul {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+    padding-left: 0; 
+}
+
+
+
+.filtres li {
+  list-style: none;
+ padding-right: 15px;
+  text-align: left;
+  align-self: center;
+  align-items: center;
+  border: 2px solid #F2F2F2;
+  border-radius: 30px;
+  margin-right: 20px; 
+}
+
+.filtres i {
+
+align-items: center;
+justify-content: center;
+text-align: center;
+padding-top: 15px;
+border-radius: 25px;
+width: 52px;
+height: 52px;
+color: #0065FC;
+background-color: #DEEBFF;
+}
+
+.filtres i:hover {
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 15px;
+  border-radius: 25px;
+  width: 52px;
+  height: 52px;
+  color: #DEEBFF;
+  background-color: #0065FC;
+  }
+
+
+
+.filtres a{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 15px;
+font-weight: bold;
+color: black;
+text-decoration: none;
+height: 50px;
+
+
+}
+
+.infobulle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.infobulle i {
+  border-radius: 53px;
+  border: 1px solid #DEEBFF; 
+  background-color: #0065FC;
+  color: #F2F2F2;
+}
+
+.infobulle p {
+  padding-left: 15px;
 }
