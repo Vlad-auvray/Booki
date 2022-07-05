@@ -15,7 +15,7 @@ body {
 }
 .logo{
   align-self: flex-start;
-  
+
 }
 
 .logo img{
@@ -27,7 +27,7 @@ body {
   flex-direction: row;
   align-self: flex-end;
   align-content: space-between;
-  
+
 }
 
 .menu li {
@@ -40,7 +40,8 @@ list-style: none;
   padding: 20px 2px 2px 2px;
   margin-right: 25px;
   text-decoration: none;
-  
+  color: black;
+
 }
 
 .menu a:hover{
@@ -101,7 +102,7 @@ list-style: none;
   align-self: center;
   align-items: center;
   text-align: center;
-    padding-left: 0; 
+    padding-left: 0;
 }
 
 
@@ -114,7 +115,7 @@ list-style: none;
   align-items: center;
   border: 2px solid #F2F2F2;
   border-radius: 30px;
-  margin-right: 20px; 
+  margin-right: 20px;
 }
 
 .filtres i {
@@ -166,11 +167,130 @@ height: 50px;
 
 .infobulle i {
   border-radius: 53px;
-  border: 1px solid #DEEBFF; 
+  border: 1px solid #DEEBFF;
   background-color: #0065FC;
   color: #F2F2F2;
 }
 
 .infobulle p {
   padding-left: 15px;
+}
+
+
+.logements{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.hebergements {
+  flex: 2;
+width:70%;
+  height: 680px;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color:lightgrey;
+}
+
+
+.bloc1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+.bloc2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+
+.card1 {
+    background-color: white;
+    width: 30%;
+    height: auto;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+height: auto;
+
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card1 img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 120px;
+}
+
+  .card2 img{
+    border-radius: 15px 0 0 15px;
+    width: 35%;
+    height: 160px;
+}
+
+.hebergements p {
+  padding-top: 1px;
+}
+
+.populaire {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:680px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: lightgrey;
+}
+
+.pluspopulaires{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+width: 90%;
+align-items: center;
+padding-top: 15px;
+padding-left: 25px;
+}
+
+.pluspopulaires h3 {
+  padding-left: 10px;
+}
+
+.blocpop {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.details {
+  padding-left: 10px;
+}
+
+.colorbleu{
+  color: #0065FC
+}
+
+.colorgris {
+  color: grey;
 }
