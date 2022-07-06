@@ -265,9 +265,9 @@ height: auto;
 }
 
 .pluspopulaires{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-between;
+display: flex;
+flex-direction: row;
+justify-content:space-between;
 width: 90%;
 align-items: center;
 padding-top: 15px;
@@ -294,3 +294,84 @@ padding-left: 25px;
 .colorgris {
   color: grey;
 }
+
+
+.activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blocactivites {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+  height: 600px;
+}
+
+.card3 {
+  ;
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.bloccard3{
+width: 25%;
+}
+
+.bloccard4{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 23%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.card4{
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+height: auto;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.card5 {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+height: auto;
+  padding: 1% 0 1% 1%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.card3 img {
+  border-radius: 15px 15px 0 0;
+    width: 100%;
+    height:510px;
+}
+.card4 img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.card5 img{
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 150px;
+}
+
