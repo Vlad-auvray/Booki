@@ -115,9 +115,7 @@ main{
   cursor: pointer;
 }
 
-.recherche-ville button::after {
-  content: "Rechercher";
-}
+
 
 .filtres {
   margin-top: 50px;
@@ -276,15 +274,13 @@ height: 50px;
   margin-inline-end: 0px;
 }
 
-  .card2 img{
-    border-radius: 15px 0 0 15px;
-    width: 40%;
-    height: 100%;
-}
+
 
 .hebergements p {
   padding-top: 1px;
 }
+
+
 
 .afficher-plus{
   color: black;
@@ -323,12 +319,23 @@ align-items: center;
   flex-direction: column;
 }
 
+.card2 img{
+  border-radius: 15px 0 0 15px;
+  width: 40%;
+  height: 100%;
+}
+
 .details {
   height: 100%;
+  width: 60%;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.details p {
+  margin-top: 0px;
 }
 
 .details h4{
@@ -503,8 +510,11 @@ footer {
 
 /*Tablettes*/
 
-@media all and (max-width:992px) and(min-width:768px)
-{}
+@media all and (min-width:768px)
+{
+span.icon {display:none}
+}
+
 
 
 /*Smartphone*/
@@ -524,6 +534,12 @@ footer {
 
 .logo {
  justify-content: center;
+}
+
+
+.menu{
+  display: flex;
+  
 }
 
 .menu ul {
@@ -563,16 +579,35 @@ text-align: left;
 
 }
 
-
 .recherche-ville button {
+  width: 80px;
 }
 
-.recherche-ville button::after {
-  
-  content: icon magnifying-glass;
- color: white;
+span.icon {
+  display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+background-color: #0065FC;
+color: white;
+border-radius: 0 10px 10px 0;
+cursor: pointer;
 }
 
+
+.icon i {
+  background-color:#0065FC ;
+  height: 20px;
+  width: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;}
+
+
+
+span.text {
+  display: none;
+}
 
 .filtres  {
   align-items: center;
