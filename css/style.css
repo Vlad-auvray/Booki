@@ -16,6 +16,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
 align-items: center;
+margin-left: 5%;
+    margin-right: 5%
 }
 
 
@@ -183,9 +185,16 @@ height: 50px;
 
 .infobulle i {
   border-radius: 53px;
-  border: 1px solid #DEEBFF;
-  background-color: #0065FC;
-  color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+  margin-right: 1%;
+  color: #0065FC;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .infobulle p {
@@ -200,6 +209,7 @@ height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top:2%;
 }
 
 
@@ -258,6 +268,7 @@ height: 50px;
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 120px;
+  object-fit:cover;
 }
 
 .card1 h4{
@@ -323,6 +334,7 @@ align-items: center;
   border-radius: 15px 0 0 15px;
   width: 40%;
   height: 100%;
+  object-fit:cover;
 }
 
 .details {
@@ -377,13 +389,18 @@ align-items: center;
     height: auto;
     padding: 1%;
     border-radius: 20px;
-    text-align: center;
+    text-align: left;
     box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.card3 h4 {
+  padding-left: 2%;
 }
 
 .bloccard3{
   display: flex;
 width: 25%;
+height:560px;
 }
 
 .bloccard4{
@@ -393,49 +410,59 @@ justify-content: space-between;
 width: 23%;
 padding-left: 10px;
 padding-right: 10px;
+height:560px;
 }
 
 .card4{
   display: flex;
   flex-direction:column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  
 height: auto;
   padding: 1% 0 1% 1%;
   border-radius: 20px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.card4 h4 {
+  padding-left: 2%;
 }
 
 .card5 {
   display: flex;
   flex-direction:column;
   justify-content: space-between;
-  align-items: center;
 height: auto;
   padding: 1% 0 1% 1%;
   border-radius: 20px;
   margin-bottom: 20px;
-  text-align: center;
+  text-align: left;
   box-shadow: 5px 5px 5px 5px #F2F2F2;
+}
+
+.card5 h4 {
+  padding-left: 2%;
 }
 
 .card3 img {
   border-radius: 15px 15px 0 0;
     width: 100%;
-    height:510px;
+    height:450px;
+    object-fit:cover;
 }
 .card4 img{
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 200px;
+  object-fit:cover;
 }
 
 .card5 img{
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 150px;
+  object-fit:cover;
 }
 
 /*Pied de page*/
@@ -444,7 +471,7 @@ footer {
   background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  
   align-self:  center;
   width: 100%;
 }
@@ -464,6 +491,7 @@ footer {
 
 .apropos ul {
   padding-left: 0px;
+  margin-right: 90px;
 }
 
 
@@ -471,6 +499,7 @@ footer {
 
 .hebergements-footer ul {
   padding-left: 0px;
+  margin-right: 90px;
 }
 
 
@@ -508,11 +537,147 @@ footer {
 
 /*Responsive*/
 
-/*Tablettes*/
+
 
 @media all and (min-width:768px)
 {
 span.icon {display:none}
+}
+
+/*Tablettes*/
+
+@media all and (min-width:768px) and (max-width:992px)
+{
+
+  .logements {
+    flex-direction: column;
+    align-items: center;
+    
+    }
+
+
+    .hebergements{
+
+      align-items: center;
+      margin-bottom: 5px;
+    width: 100%;
+    margin-right: 0;
+    background-color: white;
+    padding-left: 0px;
+    }
+    
+    .populaire{
+      margin-left: 0;
+      align-items: center;
+      margin-bottom: 5px;
+      width: 100%;
+      padding-left: 0px;
+      padding-top: 0px;
+    }
+    
+    .blocpop{
+      padding-left: 5px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+    
+    .pluspopulaires {
+      align-self: flex-start;
+    width: 100%;
+    padding-top: 0;
+    }
+    
+    .pluspopulaires h3 {
+      padding-right: 140px;
+    }*
+    
+    .bloc1{
+      
+    margin-bottom: 0px;
+    
+    }
+    .bloc2{
+      padding-top: 0px;
+      
+    }
+    
+    .card1 {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+      width: 90%;
+      box-shadow: 5px 5px 5px 5px #F2F2F2;
+    }
+
+    .card2 {
+      width: 30%;
+    }
+    
+    .card2 img {
+     width: 40%;
+    
+    }
+    
+    .details{
+      width: 60%;
+    }
+    
+    .card3{
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .card3 h4{
+      text-align: left;
+      padding-left: 2%;
+    }
+    
+    .card4 {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .card4 h4{
+      text-align: left;
+      padding-left: 2%;
+    }
+    .card5 {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .card5 h4{
+      text-align: left;
+      padding-left: 2%;
+    }
+    
+    .blocactivites {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card3 img {
+      width: 100%;
+      height: 150px;
+    }
+    
+    .card4 img {
+      width: 100%;
+      height: 150px;
+    }
+    
+    .bloccard3{
+    width: 90%;
+    padding: 0;
+    height:100%;
+    }
+    
+    .bloccard4 {
+    width: 90%;
+    padding: 0;
+    height:100%;
+    }
+
+
 }
 
 
@@ -528,6 +693,8 @@ span.icon {display:none}
 .header {
   display: flex;
   flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
 
 }
 
@@ -610,6 +777,7 @@ text-align: left;
 
 .recherche-ville button {
   width: 80px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 span.icon {
@@ -674,7 +842,7 @@ padding-left: 0px;
 
 .pluspopulaires {
   align-self: flex-start;
-
+width: 100%;
 }
 
 .pluspopulaires h3 {
@@ -698,6 +866,7 @@ margin-bottom: 0px;
   align-items: flex-start;
   margin-bottom: 10px;
   width: 90%;
+  box-shadow: 5px 5px 5px 5px #F2F2F2;
 }
 
 .card2 img {
@@ -721,8 +890,6 @@ margin-bottom: 0px;
 
 .card4 {
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
   margin-bottom: 20px;
 }
 .card4 h4{
@@ -731,8 +898,6 @@ margin-bottom: 0px;
 }
 .card5 {
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
   margin-bottom: 20px;
 }
 .card5 h4{
@@ -758,11 +923,13 @@ margin-bottom: 0px;
 .bloccard3{
 width: 90%;
 padding: 0;
+height:100%;
 }
 
 .bloccard4 {
 width: 90%;
 padding: 0;
+height:100%;
 }
 
 footer{
