@@ -208,6 +208,9 @@ height: 50px;
   padding-left: 15px;
 }
 
+span.text {
+  font-weight: bold;
+}
 
 /*Bloc logements*/
 
