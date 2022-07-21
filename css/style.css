@@ -73,7 +73,7 @@ main{
 /*Recherche et filtres*/
 
 .recherche {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 
@@ -831,7 +831,10 @@ cursor: pointer;
   color: white;
   cursor: pointer;}
 
-
+.infobulle i{
+  width: 50px;
+  height: 37px;
+}
 
 span.text {
   display: none;
@@ -840,6 +843,7 @@ span.text {
 .filtres  {
   align-items: center;
   flex-wrap: wrap;
+  padding-left: 0;
 }
 
 .elmtfiltre {
